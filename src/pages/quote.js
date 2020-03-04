@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 function Blog({ data }) {
   const { edges } = data.allMarkdownRemark;
   return (
-    <Layout heading="Quotes" slug="post">
+    <Layout heading="Quotes" slug="quote">
       <SEO title="Quotes" />
       <div className="home-sections-container">
         <div className="home-sections">
@@ -26,7 +26,7 @@ function Blog({ data }) {
                         </div>
                         <header className="list-item-header">
                           <h3 className="list-item-title">
-                            <Link to={'/post/' + path}>{title}</Link>
+                            <Link to={`/quote/${path}`}>{title}</Link>
                           </h3>
                         </header>
                       </article>

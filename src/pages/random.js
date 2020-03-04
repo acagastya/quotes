@@ -23,7 +23,7 @@ function RandomQuotePage({ data }) {
                   <header className="list-item-header">
                     <h3 className="list-item-title">
                       <em>
-                        <Link to={'/post/' + path}>{title}</Link>
+                        <Link to={`/quote/${path}`}>{title}</Link>
                       </em>
                     </h3>
                     <div className="meta">

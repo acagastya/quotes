@@ -15,10 +15,10 @@ function Header({ description, link = '/', showHeader, siteTitle, slug }) {
         >
           <ul className="main-menu">
             <li>
-              {slug == 'post' ? (
+              {slug == 'quote' ? (
                 <BoldEntry text="Quotes" />
               ) : (
-                <Link to="/post">Quotes</Link>
+                <Link to="/quote">Quotes</Link>
               )}
             </li>
             <li>

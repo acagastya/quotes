@@ -47,7 +47,7 @@ function SEO({ blog = false, description, lang, path, tags, title }) {
       {blog && path ? (
         <meta
           property="og:url"
-          content={`${site.siteMetadata.siteUrl}/post${path}`}
+          content={`${site.siteMetadata.siteUrl}/quote${path}`}
         />
       ) : (
         <meta property="og:url" content={`${site.siteMetadata.siteUrl}`} />
@@ -62,7 +62,7 @@ function SEO({ blog = false, description, lang, path, tags, title }) {
       {path ? (
         <meta
           name="twitter:url"
-          content={`${site.siteMetadata.siteUrl}/post${path}`}
+          content={`${site.siteMetadata.siteUrl}/quote${path}`}
         />
       ) : (
         <meta name="twitter:url" content={`${site.siteMetadata.siteUrl}`} />

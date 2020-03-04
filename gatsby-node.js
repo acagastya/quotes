@@ -113,7 +113,7 @@ exports.createPages = function({ graphql, actions }) {
         createAuthorPages(createPage, posts);
         posts.forEach(function({ node }, index) {
           createPage({
-            path: 'post' + node.frontmatter.path,
+            path: 'quote' + node.frontmatter.path,
             component: blogPostTemplate,
             context: {
               pathSlug: node.frontmatter.path,
