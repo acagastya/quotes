@@ -41,41 +41,40 @@ const createTagPages = function(createPage, posts) {
   });
 };
 
-const createCatPages = function(createPage, posts) {
-  const allCatsTemplate = path.resolve(
+const createAuthorPages = function(createPage, posts) {
+  const allAuthorsTemplate = path.resolve(
     'src',
     'templates',
-    'allCatsTemplate.js'
+    'allAuthorsTemplate.js'
   );
-  const singleCatTemplate = path.resolve(
+  const singleAuthorTemplate = path.resolve(
     'src',
     'templates',
-    'singleCatTemplate.js'
+    'singleAuthorTemplate.js'
   );
-  const postsByCat = {};
+  const postsByAuthor = {};
   posts.forEach(({ node }) => {
-    if (node.frontmatter.categories) {
-      node.frontmatter.categories.forEach(cat => {
-        if (!postsByCat[cat]) postsByCat[cat] = [];
-        postsByCat[cat].push(node);
-      });
+    if (node.frontmatter.author) {
+      const author = node.frontmatter.author;
+      if (!postsByAuthor[author]) postsByAuthor[author] = [];
+      postsByAuthor[author].push(node);
     }
   });
-  const cats = Object.keys(postsByCat);
+  const authors = Object.keys(postsByAuthor);
 
   createPage({
     path: '/authors',
-    component: allCatsTemplate,
-    context: { cats, postsByCat },
+    component: allAuthorsTemplate,
+    context: { authors, postsByAuthor },
   });
 
-  cats.forEach(cat => {
-    const posts = postsByCat[cat];
+  authors.forEach(author => {
+    const posts = postsByAuthor[author];
     createPage({
-      path: `/authors/${cat}`,
-      component: singleCatTemplate,
+      path: `/authors/${author}`,
+      component: singleAuthorTemplate,
       context: {
-        cat,
+        author,
         posts,
       },
     });
@@ -99,7 +98,6 @@ exports.createPages = function({ graphql, actions }) {
                 node {
                   frontmatter {
                     author
-                    categories
                     path
                     tags
                     title
@@ -112,7 +110,7 @@ exports.createPages = function({ graphql, actions }) {
       ).then(function(result) {
         const posts = result.data.allMarkdownRemark.edges;
         createTagPages(createPage, posts);
-        createCatPages(createPage, posts);
+        createAuthorPages(createPage, posts);
         posts.forEach(function({ node }, index) {
           createPage({
             path: 'post' + node.frontmatter.path,

@@ -3,11 +3,11 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-function SingleCatTemplate({ pageContext }) {
-  const { posts, cat } = pageContext;
+function SingleAuthorTemplate({ pageContext }) {
+  const { posts, author } = pageContext;
   return (
-    <Layout heading={`Author: ${cat}`} link="/authors" slug="authors">
-      <SEO title={`Author: ${cat}`} />
+    <Layout heading={`Author: ${author}`} link="/authors" slug="authors">
+      <SEO title={`Author: ${author}`} />
       <div className="list-container">
         <ul className="list">
           {posts.map(post => {
@@ -38,4 +38,4 @@ function SingleCatTemplate({ pageContext }) {
   );
 }
 
-export default SingleCatTemplate;
+export default SingleAuthorTemplate;
