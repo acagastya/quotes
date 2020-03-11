@@ -7,6 +7,9 @@ function AllAuthorsTemplate({ pageContext }) {
   const { authors, postsByAuthor } = pageContext;
   const count = Object.values(postsByAuthor).map(el => el.length);
   const [max, min] = [Math.max(...count), Math.min(...count)];
+  authors.sort(function(str1, str2) {
+    return str1.toLowerCase().localeCompare(str2.toLowerCase());
+  });
   return (
     <Layout heading="Authors" slug="authors">
       <SEO title="Authors" />
