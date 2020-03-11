@@ -17,6 +17,7 @@ function SingleTagTemplate({ pageContext }) {
               misattributed,
               path,
               title,
+              unverified,
             } = post.frontmatter;
             return (
               <li key={path} className="list-item">
@@ -37,6 +38,13 @@ function SingleTagTemplate({ pageContext }) {
                           <span>
                             <sup>
                               <em>?</em>
+                            </sup>
+                          </span>
+                        ) : null}
+                        {unverified ? (
+                          <span>
+                            <sup>
+                              <em>#</em>
                             </sup>
                           </span>
                         ) : null}

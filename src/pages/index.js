@@ -23,6 +23,7 @@ function IndexPage({ data }) {
                     misattributed,
                     path,
                     title,
+                    unverified,
                   } = edge.node.frontmatter;
                   return (
                     <li className="list-item" key={path}>
@@ -43,6 +44,13 @@ function IndexPage({ data }) {
                                 <span>
                                   <sup>
                                     <em>?</em>
+                                  </sup>
+                                </span>
+                              ) : null}
+                              {unverified ? (
+                                <span>
+                                  <sup>
+                                    <em>#</em>
                                   </sup>
                                 </span>
                               ) : null}
@@ -81,6 +89,7 @@ export const query = graphql`
             misattributed
             path
             title
+            unverified
           }
         }
       }

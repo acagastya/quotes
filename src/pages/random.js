@@ -6,9 +6,15 @@ import SEO from '../components/seo';
 function RandomQuotePage({ data }) {
   const { edges } = data.allMarkdownRemark;
   const rnd = Math.floor(Math.random() * edges.length);
-  const { attributed, author, misattributed, path, title, where } = edges[
-    rnd
-  ].node.frontmatter;
+  const {
+    attributed,
+    author,
+    misattributed,
+    path,
+    title,
+    unverified,
+    where,
+  } = edges[rnd].node.frontmatter;
 
   return (
     <Layout>
@@ -52,6 +58,13 @@ function RandomQuotePage({ data }) {
                               </sup>
                             </span>
                           ) : null}
+                          {unverified ? (
+                            <span>
+                              <sup>
+                                <em>#</em>
+                              </sup>
+                            </span>
+                          ) : null}
                           {where ? (
                             <span>
                               <em>, {where}</em>
@@ -85,6 +98,7 @@ export const query = graphql`
             misattributed
             path
             title
+            unverified
             where
           }
         }

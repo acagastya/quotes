@@ -15,6 +15,7 @@ function Template({ data }) {
     path,
     tags,
     title,
+    unverified,
   } = frontmatter;
   return (
     <Layout showHeader={false} heading={title}>
@@ -27,6 +28,7 @@ function Template({ data }) {
         misattributed={misattributed}
         tags={tags}
         title={title}
+        unverified={unverified}
       />
     </Layout>
   );
@@ -44,12 +46,21 @@ export const query = graphql`
         path
         tags
         title
+        unverified
       }
     }
   }
 `;
 
-function Article({ attributed, author, html, lang, misattributed, tags }) {
+function Article({
+  attributed,
+  author,
+  html,
+  lang,
+  misattributed,
+  tags,
+  unverified,
+}) {
   return (
     <article lang={lang} className="entry">
       <div
@@ -61,12 +72,13 @@ function Article({ attributed, author, html, lang, misattributed, tags }) {
         author={author}
         misattributed={misattributed}
         tags={tags}
+        unverified={unverified}
       />
     </article>
   );
 }
 
-function Footer({ attributed, author, misattributed, tags }) {
+function Footer({ attributed, author, misattributed, tags, unverified }) {
   return (
     <footer className="entry-footer-container">
       <div className="entry-footer">
@@ -89,6 +101,13 @@ function Footer({ attributed, author, misattributed, tags }) {
             <span>
               <sup>
                 <em>?</em>
+              </sup>
+            </span>
+          ) : null}
+          {unverified ? (
+            <span>
+              <sup>
+                <em>#</em>
               </sup>
             </span>
           ) : null}

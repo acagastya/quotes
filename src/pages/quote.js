@@ -20,6 +20,7 @@ function Blog({ data }) {
                     misattributed,
                     path,
                     title,
+                    unverified,
                   } = edge.node.frontmatter;
                   return (
                     <li className="list-item" key={path}>
@@ -39,6 +40,13 @@ function Blog({ data }) {
                               <span>
                                 <sup>
                                   <em>?</em>
+                                </sup>
+                              </span>
+                            ) : null}
+                            {unverified ? (
+                              <span>
+                                <sup>
+                                  <em>#</em>
                                 </sup>
                               </span>
                             ) : null}
@@ -76,6 +84,7 @@ export const query = graphql`
             misattributed
             path
             title
+            unverified
           }
         }
       }
