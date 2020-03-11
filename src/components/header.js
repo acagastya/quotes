@@ -28,6 +28,13 @@ function Header({ description, link = '/', showHeader, siteTitle, slug }) {
                 <Link to="/about">About</Link>
               )}
             </li>
+            <li>
+              {slug == 'random' ? (
+                <BoldEntry text="Random" />
+              ) : (
+                <Link to="/random">Random</Link>
+              )}
+            </li>
           </ul>
         </nav>
 

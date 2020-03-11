@@ -17,14 +17,11 @@ function RandomQuotePage({ data }) {
   } = edges[rnd].node.frontmatter;
 
   return (
-    <Layout>
+    <Layout slug="random" heading="Random Quote">
       <SEO title="Random Quote" />
       <div className="home-sections-container">
         <div className="home-sections">
           <section id="recent-posts" className="home-section">
-            <header>
-              <h2 className="home-section-title title">Random Quote</h2>
-            </header>
             <div className="list-container">
               <ul className="list">
                 <article>
