@@ -40,7 +40,7 @@ function RandomQuotePage({ data }) {
                         <span className="author-container">
                           <Link
                             className="author-container-link"
-                            to={`/author/${author}`}
+                            to={`/authors/${author}`}
                           >
                             {author}
                           </Link>
