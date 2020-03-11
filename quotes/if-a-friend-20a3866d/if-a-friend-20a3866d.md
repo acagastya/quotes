@@ -1,16 +1,16 @@
 ---
 attributed: false
-author: 'Imam Bayhaqi'
+author: 'Imām al-Bayhaqi'
 date: '2020-03-02'
 draft: false
 lang: 'en'
 misattributed: false
-path: '/dear-tecrube'
+path: '/if-a-friend-20a3866d'
 tags: ['Patience', 'Friendship', 'Understanding']
 title: 'If a friend among your friends errs, make seventy excuses for them.'
 unverified: true
-where: 'Shu`ab Al-Iman, 7.522'
+where: 'Shu‘ab al-Imān, 7.522'
 ---
 
 # *If a friend among your friends errs, make seventy excuses for them.*
-&mdash; Imam Bayhaqi, Shu`ab Al-Iman, 7.522
+&mdash; Imām al-Bayhaqi, <cite>Shu‘ab Al-Imān, 7.522</cite> (unverified)

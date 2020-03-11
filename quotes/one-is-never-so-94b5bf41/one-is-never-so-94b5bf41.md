@@ -1,7 +1,7 @@
 ---
 attributed: false
 author: 'L. Frank Baum'
-date: '2020-03-11'
+date: '1900-05-17'
 draft: false
 lang: 'en'
 misattributed: false
@@ -14,6 +14,5 @@ where: 'The Wonderful Wizard of Oz'
 
 # *[O]ne is never so pretty after being mended, you know.*
 
-&mdash; China Princess, talking to Dorothy,  
-<em>The Wonderful Wizard of Oz</em> by 
+&mdash; China Princess, <cite><abbr title="ISBN-13: 9780140621679">The Wonderful Wizard of Oz</abbr></cite> by 
 [L. Frank Baum](/authors/L. Frank Baum).

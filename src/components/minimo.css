@@ -117,8 +117,12 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
+}
+
+h1 abbr[title] {
   text-decoration: underline dotted;
 }
+
 b,
 strong {
   font-weight: inherit;
