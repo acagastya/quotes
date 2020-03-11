@@ -74,9 +74,7 @@ const createAuthorPages = function(createPage, posts) {
       path: `/authors/${author}`,
       component: singleAuthorTemplate,
       context: {
-        attributed,
         author,
-        misattributed,
         posts,
       },
     });
@@ -105,6 +103,7 @@ exports.createPages = function({ graphql, actions }) {
                     path
                     tags
                     title
+                    unverified
                   }
                 }
               }
