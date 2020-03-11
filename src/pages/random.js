@@ -52,7 +52,11 @@ function RandomQuotePage({ data }) {
                               </sup>
                             </span>
                           ) : null}
-                          {where ? <span>, {where}</span> : null}
+                          {where ? (
+                            <span>
+                              <em>, {where}</em>
+                            </span>
+                          ) : null}
                         </span>
                       </span>
                     </div>
