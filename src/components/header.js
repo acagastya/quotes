@@ -30,13 +30,6 @@ function Header({ description, link = '/', showHeader, siteTitle, slug }) {
                 <Link to={`/${repo}/about`}>About</Link>
               )}
             </li>
-            <li>
-              {slug == 'random' ? (
-                <BoldLinkEntry text="Random" path={`/${repo}/random/`} />
-              ) : (
-                <Link to={`/${repo}/random`}>Random</Link>
-              )}
-            </li>
           </ul>
         </nav>
 
@@ -65,14 +58,6 @@ Header.defaultProps = {
 
 function BoldEntry({ text = '' }) {
   return <span style={{ fontWeight: 700, cursor: 'default' }}>{text}</span>;
-}
-
-function BoldLinkEntry({ text = '', path = `/${repo}` }) {
-  return (
-    <span style={{ fontWeight: 700, cursor: 'default' }}>
-      <Link to={path}>{text}</Link>
-    </span>
-  );
 }
 
 export default Header;
