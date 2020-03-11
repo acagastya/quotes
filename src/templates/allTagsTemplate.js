@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { siteMetadata } from '../../gatsby-config';
+
+const { repo } = siteMetadata;
 
 function AllTagsTemplate({ pageContext }) {
   const { postsByTag, tags } = pageContext;
@@ -23,7 +26,7 @@ function AllTagsTemplate({ pageContext }) {
             return (
               <li key={tag}>
                 <Link
-                  to={`/tags/${tag}`}
+                  to={`/${repo}/tags/${tag}`}
                   style={{ fontSize: `${1 + num}em`, fontWeight: `${weight}` }}
                 >
                   {tag}

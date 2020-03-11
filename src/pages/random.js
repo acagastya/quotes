@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { siteMetadata } from '../../gatsby-config';
+
+const { repo } = siteMetadata;
 
 function RandomQuotePage({ data }) {
   const { edges } = data.allMarkdownRemark;
@@ -28,7 +31,7 @@ function RandomQuotePage({ data }) {
                   <header className="list-item-header">
                     <h3 className="list-item-title">
                       <em>
-                        <Link to={`/quote/${path}`}>{title}</Link>
+                        <Link to={`${repo}/quote/${path}`}>{title}</Link>
                       </em>
                     </h3>
                     <div className="meta">
@@ -37,7 +40,7 @@ function RandomQuotePage({ data }) {
                         <span className="author-container">
                           <Link
                             className="author-container-link"
-                            to={`/authors/${author}`}
+                            to={`${repo}/authors/${author}`}
                           >
                             {author}
                           </Link>

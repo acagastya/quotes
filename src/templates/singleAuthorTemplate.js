@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { siteMetadata } from '../../gatsby-config';
+
+const { repo } = siteMetadata;
 
 function SingleAuthorTemplate({ pageContext }) {
   const { author, posts } = pageContext;
@@ -30,7 +33,7 @@ function SingleAuthorTemplate({ pageContext }) {
                     <span>
                       <span className="screen-reader">Quote by </span>
                       <span>
-                        <Link to={`/authors/${author}`}>{author}</Link>
+                        <Link to={`/${repo}/authors/${author}`}>{author}</Link>
                         {attributed ? (
                           <span>
                             <sup>
@@ -57,7 +60,7 @@ function SingleAuthorTemplate({ pageContext }) {
                   </div>
                   <header className="list-item-header">
                     <h3 className="list-item-title">
-                      <Link to={`/quote/${path}`}>{title}</Link>
+                      <Link to={`/${repo}/quote/${path}`}>{title}</Link>
                     </h3>
                   </header>
                 </article>

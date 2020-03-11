@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { siteMetadata } from '../../gatsby-config';
+
+const { repo } = siteMetadata;
 
 function Blog({ data }) {
   const { edges } = data.allMarkdownRemark;
@@ -28,7 +31,9 @@ function Blog({ data }) {
                         <div className="meta">
                           <span>
                             <span className="screen-reader">Quote by </span>
-                            <Link to={`/authors/${author}`}>{author}</Link>
+                            <Link to={`${repo}/authors/${author}`}>
+                              {author}
+                            </Link>
                             {attributed ? (
                               <span>
                                 <sup>
@@ -54,7 +59,7 @@ function Blog({ data }) {
                         </div>
                         <header className="list-item-header">
                           <h3 className="list-item-title">
-                            <Link to={`/quote/${path}`}>{title}</Link>
+                            <Link to={`${repo}/quote/${path}`}>{title}</Link>
                           </h3>
                         </header>
                       </article>

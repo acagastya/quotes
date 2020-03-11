@@ -3,6 +3,9 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { CategorySVG, TagSVG } from '../components/partials/SVGIcon';
+import { siteMetadata } from '../../gatsby-config';
+
+const { repo } = siteMetadata;
 
 function Template({ data }) {
   const { markdownRemark } = data;
@@ -87,7 +90,7 @@ function Footer({ attributed, author, misattributed, tags, unverified }) {
             <CategorySVG />
           </span>
           <span className="screen-reader">Author: </span>
-          <Link className="author" to={`/authors/${author}`}>
+          <Link className="author" to={`/${repo}/authors/${author}`}>
             {author}
           </Link>
           {attributed ? (
@@ -121,7 +124,7 @@ function Footer({ attributed, author, misattributed, tags, unverified }) {
             {tags.map((tag, index) => {
               return (
                 <React.Fragment key={tag}>
-                  <Link className="tag" to={`/tags/${tag}`}>
+                  <Link className="tag" to={`/${repo}/tags/${tag}`}>
                     {tag}
                   </Link>
                   {index < tags.length - 1 ? ', ' : ' '}

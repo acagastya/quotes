@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { siteMetadata } from '../../gatsby-config';
+
+const { repo } = siteMetadata;
 
 function AllAuthorsTemplate({ pageContext }) {
   const { authors, postsByAuthor } = pageContext;
@@ -23,7 +26,7 @@ function AllAuthorsTemplate({ pageContext }) {
             return (
               <li key={author}>
                 <Link
-                  to={`/authors/${author}`}
+                  to={`/${repo}/authors/${author}`}
                   style={{ fontSize: `${1 + num}em`, fontWeight: `${weight}` }}
                 >
                   {author}

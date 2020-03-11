@@ -1,5 +1,4 @@
 const path = require('path');
-
 module.exports = {
   siteMetadata: {
     author: 'Agastya Chandrakant',
@@ -7,8 +6,9 @@ module.exports = {
     email: 'acagastya@outlook.com',
     github: 'acagastya',
     instagram: 'acagastya',
+    repo: 'quotes',
     siteName: 'Quotes',
-    siteUrl: 'https://acagastya.github.io/quotes',
+    siteUrl: 'https://acagastya.github.io/quotes/',
     title: 'Quotes',
     twitter: '@acagastya',
     username: 'acagastya',
