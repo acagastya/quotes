@@ -737,6 +737,7 @@ textarea:focus {
   font-size: 1em;
   font-weight: 400;
   margin-bottom: 0;
+  font-style: italic;
 }
 .list-item .icon {
   margin-right: 0.25em;
@@ -947,13 +948,10 @@ summary {
   content: '— ';
 }
 
-.author-container {
+.author-container-link {
   text-decoration: underline;
-  text-decoration-style: dashed;
 }
-
 .author:hover,
 .tag:hover {
   text-decoration: underline;
-  text-decoration-style: dashed;
 }
