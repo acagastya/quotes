@@ -2,7 +2,7 @@
 attributed: false
 author: 'Lawrence M. Krauss'
 categories: ['Lawrence M. Krauss']
-date: 'March 2, 2020'
+date: '2020-03-02'
 draft: false
 lang: 'en'
 misattributed: false

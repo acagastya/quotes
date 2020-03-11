@@ -2,7 +2,7 @@
 attributed: false
 author: 'Christopher Hitchens'
 categories: ['Christopher Hitchens']
-date: 'March 2, 2020'
+date: '2020-03-02'
 draft: false
 lang: 'en'
 misattributed: false
