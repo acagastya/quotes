@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 function IndexPage({ data }) {
   const { edges } = data.allMarkdownRemark;
   return (
-    <Layout>
+    <Layout heading={`Quotes (${edges.length})`}>
       <SEO title="Home" />
       <div className="home-sections-container">
         <div className="home-sections">
@@ -17,7 +17,13 @@ function IndexPage({ data }) {
             <div className="list-container">
               <ul className="list">
                 {edges.map(edge => {
-                  const { author, path, title } = edge.node.frontmatter;
+                  const {
+                    author,
+                    attributed,
+                    misattributed,
+                    path,
+                    title,
+                  } = edge.node.frontmatter;
                   return (
                     <li className="list-item" key={path}>
                       <article>
@@ -26,6 +32,20 @@ function IndexPage({ data }) {
                             <span className="screen-reader">Quote by </span>
                             <span>
                               <Link to={`/authors/${author}`}>{author}</Link>
+                              {attributed ? (
+                                <span>
+                                  <sup>
+                                    <em>!</em>
+                                  </sup>
+                                </span>
+                              ) : null}
+                              {misattributed ? (
+                                <span>
+                                  <sup>
+                                    <em>?</em>
+                                  </sup>
+                                </span>
+                              ) : null}
                             </span>
                           </span>
                         </div>
@@ -56,7 +76,9 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            attributed
             author
+            misattributed
             path
             title
           }

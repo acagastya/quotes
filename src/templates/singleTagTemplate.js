@@ -6,12 +6,18 @@ import SEO from '../components/seo';
 function SingleTagTemplate({ pageContext }) {
   const { posts, tag } = pageContext;
   return (
-    <Layout heading={`Tag: ${tag}`} link="/tags" slug="tag">
+    <Layout heading={`Tag: ${tag} (${posts.length})`} link="/tags" slug="tag">
       <SEO title={`Tag: ${tag}`} />
       <div className="list-container">
         <ul className="list">
           {posts.map(post => {
-            const { author, path, title } = post.frontmatter;
+            const {
+              attributed,
+              author,
+              misattributed,
+              path,
+              title,
+            } = post.frontmatter;
             return (
               <li key={path} className="list-item">
                 <article>
@@ -20,6 +26,20 @@ function SingleTagTemplate({ pageContext }) {
                       <span className="screen-reader">Quote by </span>
                       <span>
                         <Link to={`/authors/${author}`}>{author}</Link>
+                        {attributed ? (
+                          <span>
+                            <sup>
+                              <em>!</em>
+                            </sup>
+                          </span>
+                        ) : null}
+                        {misattributed ? (
+                          <span>
+                            <sup>
+                              <em>?</em>
+                            </sup>
+                          </span>
+                        ) : null}
                       </span>
                     </span>
                   </div>

@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 function Blog({ data }) {
   const { edges } = data.allMarkdownRemark;
   return (
-    <Layout heading="Quotes" slug="quote">
+    <Layout heading={`Quotes (${edges.length})`} slug="quote">
       <SEO title="Quotes" />
       <div className="home-sections-container">
         <div className="home-sections">
@@ -14,7 +14,13 @@ function Blog({ data }) {
             <div className="list-container">
               <ul className="list">
                 {edges.map(edge => {
-                  const { author, path, title } = edge.node.frontmatter;
+                  const {
+                    attributed,
+                    author,
+                    misattributed,
+                    path,
+                    title,
+                  } = edge.node.frontmatter;
                   return (
                     <li className="list-item" key={path}>
                       <article>
@@ -22,6 +28,20 @@ function Blog({ data }) {
                           <span>
                             <span className="screen-reader">Quote by </span>
                             <Link to={`/authors/${author}`}>{author}</Link>
+                            {attributed ? (
+                              <span>
+                                <sup>
+                                  <em>!</em>
+                                </sup>
+                              </span>
+                            ) : null}
+                            {misattributed ? (
+                              <span>
+                                <sup>
+                                  <em>?</em>
+                                </sup>
+                              </span>
+                            ) : null}
                           </span>
                         </div>
                         <header className="list-item-header">
@@ -51,7 +71,9 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            attributed
             author
+            misattributed
             path
             title
           }

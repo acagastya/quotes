@@ -4,14 +4,24 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 function SingleAuthorTemplate({ pageContext }) {
-  const { posts, author } = pageContext;
+  const { author, posts } = pageContext;
   return (
-    <Layout heading={`Author: ${author}`} link="/authors" slug="authors">
+    <Layout
+      heading={`Author: ${author} (${posts.length})`}
+      link="/authors"
+      slug="authors"
+    >
       <SEO title={`Author: ${author}`} />
       <div className="list-container">
         <ul className="list">
           {posts.map(post => {
-            const { author, path, title } = post.frontmatter;
+            const {
+              attributed,
+              author,
+              misattributed,
+              path,
+              title,
+            } = post.frontmatter;
             return (
               <li key={path} className="list-item">
                 <article>
@@ -20,6 +30,20 @@ function SingleAuthorTemplate({ pageContext }) {
                       <span className="screen-reader">Quote by </span>
                       <span>
                         <Link to={`/authors/${author}`}>{author}</Link>
+                        {attributed ? (
+                          <span>
+                            <sup>
+                              <em>!</em>
+                            </sup>
+                          </span>
+                        ) : null}
+                        {misattributed ? (
+                          <span>
+                            <sup>
+                              <em>?</em>
+                            </sup>
+                          </span>
+                        ) : null}
                       </span>
                     </span>
                   </div>

@@ -6,7 +6,9 @@ import SEO from '../components/seo';
 function RandomQuotePage({ data }) {
   const { edges } = data.allMarkdownRemark;
   const rnd = Math.floor(Math.random() * edges.length);
-  const { author, path, title } = edges[rnd].node.frontmatter;
+  const { attributed, author, misattributed, path, title, where } = edges[
+    rnd
+  ].node.frontmatter;
 
   return (
     <Layout>
@@ -30,7 +32,27 @@ function RandomQuotePage({ data }) {
                       <span>
                         <span className="screen-reader">Quote by </span>
                         <span className="author-container">
-                          <Link to={`/author/${author}`}>{author}</Link>
+                          <Link
+                            className="author-container-link"
+                            to={`/author/${author}`}
+                          >
+                            {author}
+                          </Link>
+                          {attributed ? (
+                            <span>
+                              <sup>
+                                <em>!</em>
+                              </sup>
+                            </span>
+                          ) : null}
+                          {misattributed ? (
+                            <span>
+                              <sup>
+                                <em>?</em>
+                              </sup>
+                            </span>
+                          ) : null}
+                          {where ? <span>, {where}</span> : null}
                         </span>
                       </span>
                     </div>
@@ -54,9 +76,12 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            attributed
             author
+            misattributed
             path
             title
+            where
           }
         }
       }
