@@ -12,4 +12,4 @@ unverified: true
 ---
 
 # *If a friend among your friends errs, make seventy excuses for them.*
-&mdash; [Imām al-Bayhaqi](/authors/Imām al-Bayhaqi), <cite>Shu‘ab Al-Imān, 7.522</cite> (unverified)
+&mdash; Imām al-Bayhaqi, <cite>Shu‘ab Al-Imān, 7.522</cite> (unverified)

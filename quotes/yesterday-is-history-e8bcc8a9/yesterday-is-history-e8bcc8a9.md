@@ -13,4 +13,4 @@ unverified: true
 
 # *Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the "present".*
 
-&mdash; [Alice Morse Earle](/authors/Alice Morse Earle) (attributed)
+&mdash; Alice Morse Earle (attributed)

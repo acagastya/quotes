@@ -13,7 +13,7 @@ unverified: false
 
 # *le plus souvent, au cours de notre vie, nous pensons moins avec les mots que les mots et les concepts ne se pensent à travers nous.*
 
-&mdash; [Martin Heidegger](/authors/Martin Heidegger) (attributed), <cite><abbr title="ISBN-13: 9782081278363">Comment j'ai cessé d'être juif</abbr></cite> by Shlomo Sand
+&mdash; Martin Heidegger (attributed), <cite><abbr title="ISBN-13: 9782081278363">Comment j'ai cessé d'être juif</abbr></cite> by Shlomo Sand
 
 ---
 

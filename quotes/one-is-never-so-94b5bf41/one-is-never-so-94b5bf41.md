@@ -13,5 +13,4 @@ unverified: false
 
 # *[O]ne is never so pretty after being mended, you know.*
 
-&mdash; China Princess, <cite><abbr title="ISBN-13: 9780140621679">The Wonderful Wizard of Oz</abbr></cite> by 
-[L. Frank Baum](/authors/L. Frank Baum).
+&mdash; China Princess, <cite><abbr title="ISBN-13: 9780140621679">The Wonderful Wizard of Oz</abbr></cite> by L. Frank Baum.
