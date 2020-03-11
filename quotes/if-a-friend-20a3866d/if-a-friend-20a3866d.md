@@ -9,7 +9,6 @@ path: '/if-a-friend-20a3866d'
 tags: ['Friendship', 'Patience', 'Understanding']
 title: 'If a friend among your friends errs, make seventy excuses for them.'
 unverified: true
-where: 'Shu‘ab al-Imān, 7.522.'
 ---
 
 # *If a friend among your friends errs, make seventy excuses for them.*

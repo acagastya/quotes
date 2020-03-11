@@ -9,7 +9,6 @@ path: '/most-often-in-our-354f6208'
 tags: ['Thinking']
 title: 'Most often in the course of our life we think less with words and concepts than they think themselves through us.'
 unverified: false
-where: "\"How I Stopped Being a Jew\" by Shlomo Sand.  (attributed)"
 ---
 
 # *le plus souvent, au cours de notre vie, nous pensons moins avec les mots que les mots et les concepts ne se pensent à travers nous.*

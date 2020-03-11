@@ -9,7 +9,6 @@ path: '/one-is-never-so-94b5bf41'
 tags: ['Broken', 'Healing', 'Hurt', 'Oneself']
 title: '[O]ne is never so pretty after being mended, you know.'
 unverified: false
-where: 'The Wonderful Wizard of Oz.'
 ---
 
 # *[O]ne is never so pretty after being mended, you know.*
