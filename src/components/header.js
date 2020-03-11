@@ -30,7 +30,7 @@ function Header({ description, link = '/', showHeader, siteTitle, slug }) {
             </li>
             <li>
               {slug == 'random' ? (
-                <BoldEntry text="Random" />
+                <BoldLinkEntry text="Random" path="/random" />
               ) : (
                 <Link to="/random">Random</Link>
               )}
@@ -63,6 +63,14 @@ Header.defaultProps = {
 
 function BoldEntry({ text = '' }) {
   return <span style={{ fontWeight: 700, cursor: 'default' }}>{text}</span>;
+}
+
+function BoldLinkEntry({ text = '', path = '/' }) {
+  return (
+    <span style={{ fontWeight: 700, cursor: 'default' }}>
+      <Link to={path}>{text}</Link>
+    </span>
+  );
 }
 
 export default Header;
