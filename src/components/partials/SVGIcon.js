@@ -81,38 +81,6 @@ export function InstagramSVG() {
   );
 }
 
-export function NextSVG() {
-  return (
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      aria-hidden="true"
-    >
-      <line x1="4" y1="12" x2="20" y2="12"></line>
-      <polyline points="14 6 20 12 14 18"></polyline>
-    </svg>
-  );
-}
-
-export function PrevSVG() {
-  return (
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      aria-hidden="true"
-    >
-      <line x1="20" y1="12" x2="4" y2="12"></line>
-      <polyline points="10 18 4 12 10 6"></polyline>
-    </svg>
-  );
-}
-
 export function TagSVG() {
   return (
     <svg
