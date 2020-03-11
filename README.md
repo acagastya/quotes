@@ -31,12 +31,15 @@ This is how the frontmatter must appear
 ```markdown
 ---
 author: String!
+attributed: Boolean!
+misattributed: Boolean!,
 date: Date(yyyy-mm-dd)!
 draft: Boolean!
 lang: String(ISO 639-1)!
 path: unique(String!)
 tags: Array<String>!
 title: String!
+where: String!
 
 ---
 ```
