@@ -13,4 +13,4 @@ where: ''
 ---
 
 # *What can be asserted without evidence can be dismissed without evidence.*
-&mdash; Christopher Hitchens (attributed)
+&mdash; Christopher Hitchens

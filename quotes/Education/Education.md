@@ -13,4 +13,4 @@ where: ''
 ---
 
 # *The lack of understanding of something is not evidence for God.  It's evidence for lack of understanding*
-&mdash; Lawrence M. Krauss (attributed) (missattributed)
+&mdash; Lawrence M. Krauss
