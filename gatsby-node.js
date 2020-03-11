@@ -74,7 +74,9 @@ const createAuthorPages = function(createPage, posts) {
       path: `/authors/${author}`,
       component: singleAuthorTemplate,
       context: {
+        attributed,
         author,
+        misattributed,
         posts,
       },
     });
@@ -97,7 +99,9 @@ exports.createPages = function({ graphql, actions }) {
               edges {
                 node {
                   frontmatter {
+                    attributed
                     author
+                    misattributed
                     path
                     tags
                     title
@@ -117,8 +121,6 @@ exports.createPages = function({ graphql, actions }) {
             component: blogPostTemplate,
             context: {
               pathSlug: node.frontmatter.path,
-              next: index == posts.length - 1 ? null : posts[index + 1].node,
-              prev: index == 0 ? null : posts[index - 1].node,
             },
           });
           resolve();
