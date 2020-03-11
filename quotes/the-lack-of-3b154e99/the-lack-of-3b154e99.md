@@ -12,4 +12,4 @@ unverified: false
 ---
 
 # *The lack of understanding of something is not evidence for God.  It's evidence of lack of understanding.*
-&mdash; Dr. Lawrence M. Krauss, in a debate titled <cite>[*"Is There Evidence for God?"*](https://www.youtube.com/watch?v=TqANWuXQ3Z0)</cite>.
+&mdash; Dr. Lawrence M. Krauss, in a debate titled <cite>[*"Is There Evidence for God?"*](https://youtu.be/TqANWuXQ3Z0?t=3303)</cite>.
