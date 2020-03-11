@@ -7,14 +7,24 @@ import { CategorySVG, TagSVG } from '../components/partials/SVGIcon';
 function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  const { author, lang = 'en', path, tags, title } = frontmatter;
+  const {
+    attributed,
+    author,
+    lang = 'en',
+    misattributed,
+    path,
+    tags,
+    title,
+  } = frontmatter;
   return (
     <Layout showHeader={false} heading={title}>
       <SEO blog={true} path={path} tags={tags} title={title} />
       <Article
+        attributed={attributed}
         author={author}
         html={html}
         lang={lang}
+        misattributed={misattributed}
         tags={tags}
         title={title}
       />
@@ -27,8 +37,10 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
       frontmatter {
+        attributed
         author
         lang
+        misattributed
         path
         tags
         title
@@ -37,19 +49,24 @@ export const query = graphql`
   }
 `;
 
-function Article({ author, html, lang, tags }) {
+function Article({ attributed, author, html, lang, misattributed, tags }) {
   return (
     <article lang={lang} className="entry">
       <div
         className="entry-content"
         dangerouslySetInnerHTML={{ __html: html }}
       />
-      <Footer author={author} tags={tags} />
+      <Footer
+        attributed={attributed}
+        author={author}
+        misattributed={misattributed}
+        tags={tags}
+      />
     </article>
   );
 }
 
-function Footer({ author, tags }) {
+function Footer({ attributed, author, misattributed, tags }) {
   return (
     <footer className="entry-footer-container">
       <div className="entry-footer">
@@ -61,6 +78,20 @@ function Footer({ author, tags }) {
           <Link className="author" to={`/authors/${author}`}>
             {author}
           </Link>
+          {attributed ? (
+            <span>
+              <sup>
+                <em>!</em>
+              </sup>
+            </span>
+          ) : null}
+          {misattributed ? (
+            <span>
+              <sup>
+                <em>?</em>
+              </sup>
+            </span>
+          ) : null}
         </div>
         {tags.length ? (
           <div className="tags">
