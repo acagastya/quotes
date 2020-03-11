@@ -3,6 +3,7 @@
   + [Conventions](#Conventions)
       + [Content](#Content)
       + [Frontmatter](#Frontmatter)
+      + [Hash calculator](#Hash calculator)
   + [Using plugins](#using-plugins)
     + [Abbreviations](#Abbreviations)
 
@@ -33,7 +34,7 @@ This is how the frontmatter must appear
 author: String!
 attributed: Boolean!
 misattributed: Boolean!,
-date: Date(yyyy-mm-dd)!
+date: String(yyyy-mm-dd)!
 draft: Boolean!
 lang: String(ISO 639-1)!
 path: unique(String!)
@@ -43,6 +44,14 @@ where: String!
 
 ---
 ```
+### Hash calculator
+
+Run the following:
+```sh
+./hashcalc.sh <content of title from frontmatter>
+```
+
+copy the first eight characters of the hash
 
 ## Using plugins
 
