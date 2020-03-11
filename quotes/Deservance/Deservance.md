@@ -9,6 +9,7 @@ misattributed: false
 path: '/2'
 tags: ['Logic', 'Assertion', 'Reasoning']
 title: 'What can be asserted without evidence can be dismissed without evidence.'
+unverified: false
 where: ''
 ---
 

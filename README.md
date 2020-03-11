@@ -40,6 +40,7 @@ lang: String(ISO 639-1)!
 path: unique(String!)
 tags: Array<String>!
 title: String!
+unverified: Boolean!
 where: String!
 
 ---

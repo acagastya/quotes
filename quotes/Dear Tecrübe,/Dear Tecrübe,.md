@@ -8,6 +8,7 @@ misattributed: false
 path: '/dear-tecrube'
 tags: ['Patience', 'Friendship', 'Understanding']
 title: 'If a friend among your friends errs, make seventy excuses for them.'
+unverified: true
 where: 'Shu`ab Al-Iman, 7.522'
 ---
 

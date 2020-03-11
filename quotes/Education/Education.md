@@ -9,6 +9,7 @@ misattributed: false
 path: '/3'
 tags: ['Logic', 'Assertion', 'Reasoning', 'Religion', 'Ignorance']
 title: "The lack of understanding of something is not evidence for God.  It's evidence for lack of understanding"
+unverified: false
 where: ''
 ---
 
