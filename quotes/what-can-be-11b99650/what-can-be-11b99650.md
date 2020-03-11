@@ -10,8 +10,8 @@ tags: ['Assertion', 'Evidence', 'Logic', 'Reasoning']
 title: 'What can be asserted without evidence can also be dismissed without
 evidence.'
 unverified: false
-where: 'God is not Great: How Religion Poisons Everything'
+where: 'God is not Great: How Religion Poisons Everything.'
 ---
 
 # *What can be asserted without evidence can also be dismissed without evidence.*
-&mdash; Christopher Hitchens, <cite><abbr title="ISBN-13: 9780446579803">God is not Great: How Religion Poisons Everything</abbr></cite>.
+&mdash; [Christopher Hitchens](/authors/Christopher Hitchens), <cite><abbr title="ISBN-13: 9780446579803">God is not Great: How Religion Poisons Everything</abbr></cite>.
