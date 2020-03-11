@@ -19,4 +19,4 @@ unverified: false
 
 # *Most often in the course of our life we think less with words and concepts than they think themselves through us.*
 
-&mdash; [Martin Heidegger](/authors/Martin Heidegger) (attributed), <cite><abbr title="ISBN-13: 9781781686140">How I Stopped Being a Jew</abbr></cite> by Shlomo Sand and translated by David Fernbach
+&mdash; Martin Heidegger (attributed), <cite><abbr title="ISBN-13: 9781781686140">How I Stopped Being a Jew</abbr></cite> by Shlomo Sand and translated by David Fernbach
