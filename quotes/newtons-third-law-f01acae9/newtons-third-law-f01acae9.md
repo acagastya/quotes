@@ -7,9 +7,9 @@ lang: 'en'
 misattributed: false
 path: '/newtons-third-law-f01acae9'
 tags: ['Leaving', "Newton's third law", 'Progress']
-title: "Newton's third law.  The only way humans have ever figured out of getting somewhere is leaving something behind."
+title: "Newton's third law.  The only way humans have ever figured out of getting somewhere is to leave something behind."
 unverified: false
 ---
 
-# *Newton's third law.  The only way humans have ever figured out of getting somewhere is leaving something behind.*
+# *Newton's third law.  The only way humans have ever figured out of getting somewhere is to leave something behind.*
 &mdash; TARS, <cite><em>Interstellar (2014)</em></cite>, directed by Christopher Nolan
