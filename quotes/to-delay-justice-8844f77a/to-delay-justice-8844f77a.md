@@ -11,5 +11,5 @@ title: "[T]o delay Justice is Injustice."
 unverified: false
 ---
 
-# *"[T]o delay Justice is Injustice."*
+# *[T]o delay Justice is Injustice.*
 &mdash; William Penn, <cite><em><abbr title="ISBN-13: 9781419148026">Some Fruits of Solitude</abbr></em></cite>
