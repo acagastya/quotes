@@ -42,3 +42,14 @@ h5:hover > .autolink-header-anchor,
 h6:hover > .autolink-header-anchor {
   opacity: 0.5;
 }
+
+.entry-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: -1px;
+  word-spacing: 2px;
+}
