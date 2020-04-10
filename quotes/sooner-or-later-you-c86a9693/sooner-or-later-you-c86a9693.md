@@ -12,4 +12,4 @@ unverified: false
 ---
 
 # *Sooner or later you will realize that you are praying to your own shadow, that you are standing in front of mirrors and are worshipping your own reflection.*
-&mdash; To the Man Standing on the Corner Holding the Sign that Said “ God Hates Gays”, <cite><em><abbr title="ISBN-13: 9781943735198">Helium</abbr></em></cite> by Rudy Francisco
+&mdash; To the Man Standing on the Corner Holding the Sign that said “God Hates Gays”, <cite><em><abbr title="ISBN-13: 9781943735198">Helium</abbr></em></cite> by Rudy Francisco
