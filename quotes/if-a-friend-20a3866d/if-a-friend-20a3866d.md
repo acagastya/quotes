@@ -6,7 +6,7 @@ draft: false
 lang: 'en'
 misattributed: false
 path: '/if-a-friend-20a3866d'
-tags: ['Friendship', 'Patience', 'Understanding']
+tags: ['Friendship', 'Err', 'Patience', 'Understanding']
 title: 'If a friend among your friends errs, make seventy excuses for them.'
 unverified: true
 ---
