@@ -6,7 +6,7 @@ function About() {
   return (
     <Layout heading="About" slug="about">
       <SEO title="About" />
-      <article class="entry" lang="en">
+      <article className="entry" lang="en">
         <div className="entry-content">
           <p>
             Hi, I’m Agastya. I go by the name <em>acagastya</em> across the
