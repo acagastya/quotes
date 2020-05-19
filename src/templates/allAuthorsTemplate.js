@@ -26,7 +26,7 @@ function AllAuthorsTemplate({ pageContext }) {
             return (
               <li key={author}>
                 <Link
-                  to={`/${repo}/authors/${author}`}
+                  to={`/authors/${author}`}
                   style={{ fontSize: `${1 + num}em`, fontWeight: `${weight}` }}
                 >
                   {author}

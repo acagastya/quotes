@@ -33,7 +33,7 @@ function SingleAuthorTemplate({ pageContext }) {
                     <span>
                       <span className="screen-reader">Quote by </span>
                       <span>
-                        <Link to={`/${repo}/authors/${author}`}>{author}</Link>
+                        <Link to={`/authors/${author}`}>{author}</Link>
                         {attributed ? (
                           <span>
                             <sup>
@@ -60,7 +60,7 @@ function SingleAuthorTemplate({ pageContext }) {
                   </div>
                   <header className="list-item-header">
                     <h3 className="list-item-title">
-                      <Link to={`/${repo}/quote/${path}`}>{title}</Link>
+                      <Link to={`/quote/${path}`}>{title}</Link>
                     </h3>
                   </header>
                 </article>

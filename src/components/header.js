@@ -20,14 +20,14 @@ function Header({ description, link = '/', showHeader, siteTitle, slug }) {
               {slug == 'quote' ? (
                 <BoldEntry text="Quotes" />
               ) : (
-                <Link to={`/${repo}/quote`}>Quotes</Link>
+                <Link to="/quote">Quotes</Link>
               )}
             </li>
             <li>
               {slug == 'about' ? (
                 <BoldEntry text="About" />
               ) : (
-                <Link to={`/${repo}/about`}>About</Link>
+                <Link to="/about">About</Link>
               )}
             </li>
           </ul>
@@ -36,7 +36,7 @@ function Header({ description, link = '/', showHeader, siteTitle, slug }) {
         {showHeader && (
           <div className="header-info">
             <p className="site-title title">
-              <Link to={`/${repo}/${link}/`}>{siteTitle}</Link>
+              <Link to={`/${link}/`}>{siteTitle}</Link>
             </p>
             {siteTitle == 'Quotes' && (
               <p className="site-description subtitle">{description}</p>

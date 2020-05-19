@@ -90,7 +90,7 @@ function Footer({ attributed, author, misattributed, tags, unverified }) {
             <CategorySVG />
           </span>
           <span className="screen-reader">Author: </span>
-          <Link className="author" to={`/${repo}/authors/${author}`}>
+          <Link className="author" to={`/authors/${author}`}>
             {author}
           </Link>
           {attributed ? (
@@ -124,7 +124,7 @@ function Footer({ attributed, author, misattributed, tags, unverified }) {
             {tags.map((tag, index) => {
               return (
                 <React.Fragment key={tag}>
-                  <Link className="tag" to={`/${repo}/tags/${tag}`}>
+                  <Link className="tag" to={`/tags/${tag}`}>
                     {tag}
                   </Link>
                   {index < tags.length - 1 ? ', ' : ' '}

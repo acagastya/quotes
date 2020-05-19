@@ -26,7 +26,7 @@ function AllTagsTemplate({ pageContext }) {
             return (
               <li key={tag}>
                 <Link
-                  to={`/${repo}/tags/${tag}`}
+                  to={`/tags/${tag}`}
                   style={{ fontSize: `${1 + num}em`, fontWeight: `${weight}` }}
                 >
                   {tag}
