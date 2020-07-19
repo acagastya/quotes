@@ -20,7 +20,7 @@ function Header({ description, link = `/${repo}`, showHeader, siteTitle, slug })
               {slug == 'quote' ? (
                 <BoldEntry text="Quotes" />
               ) : (
-                  <Link to={`/${repo}/quote`}>Quotes</Link>
+                  <Link to={`/${repo}`}>Quotes</Link>
                 )}
             </li>
             <li>
