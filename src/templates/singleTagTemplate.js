@@ -9,7 +9,7 @@ const { repo } = siteMetadata;
 function SingleTagTemplate({ pageContext }) {
   const { posts, tag } = pageContext;
   return (
-    <Layout heading={`Tag: ${tag} (${posts.length})`} link="/tags" slug="tag">
+    <Layout heading={`Tag: ${tag} (${posts.length})`} link={`/${repo}/tags`} slug="tag">
       <SEO title={`Tag: ${tag}`} />
       <div className="list-container">
         <ul className="list">
@@ -29,7 +29,7 @@ function SingleTagTemplate({ pageContext }) {
                     <span>
                       <span className="screen-reader">Quote by </span>
                       <span>
-                        <Link to={`/authors/${author}`}>{author}</Link>
+                        <Link to={`/${repo}/authors/${author}`}>{author}</Link>
                         {attributed ? (
                           <span>
                             <sup>
@@ -56,7 +56,7 @@ function SingleTagTemplate({ pageContext }) {
                   </div>
                   <header className="list-item-header">
                     <h3 className="list-item-title">
-                      <Link to={`/quote/${path}`}>{title}</Link>
+                      <Link to={`/${repo}/quote/${path}`}>{title}</Link>
                     </h3>
                   </header>
                 </article>

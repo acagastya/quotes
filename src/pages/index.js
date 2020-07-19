@@ -35,7 +35,7 @@ function IndexPage({ data }) {
                           <span>
                             <span className="screen-reader">Quote by </span>
                             <span>
-                              <Link to={`/authors/${author}`}>{author}</Link>
+                              <Link to={`${repo}/authors/${author}`}>{author}</Link>
                               {attributed ? (
                                 <span>
                                   <sup>
@@ -62,7 +62,7 @@ function IndexPage({ data }) {
                         </div>
                         <header className="list-item-header">
                           <h3 className="list-item-title">
-                            <Link to={`/quote/${path}`}>{title}</Link>
+                            <Link to={`${repo}/quote/${path}`}>{title}</Link>
                           </h3>
                         </header>
                       </article>

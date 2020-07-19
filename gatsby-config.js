@@ -1,6 +1,5 @@
 const path = require('path');
 module.exports = {
-  pathPrefix: 'quotes',
   siteMetadata: {
     author: 'Agastya Chandrakant',
     description: 'Some of my favourite quotes',

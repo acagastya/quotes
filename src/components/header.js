@@ -6,7 +6,7 @@ import React from 'react';
 import { siteMetadata } from '../../gatsby-config';
 
 const { repo } = siteMetadata;
-function Header({ description, link = '/', showHeader, siteTitle, slug }) {
+function Header({ description, link = `/${repo}`, showHeader, siteTitle, slug }) {
   return (
     <header id="header" className="header-container">
       <div className="header site-header">
@@ -20,15 +20,15 @@ function Header({ description, link = '/', showHeader, siteTitle, slug }) {
               {slug == 'quote' ? (
                 <BoldEntry text="Quotes" />
               ) : (
-                <Link to="/quote">Quotes</Link>
-              )}
+                  <Link to={`/${repo}/quote`}>Quotes</Link>
+                )}
             </li>
             <li>
               {slug == 'about' ? (
                 <BoldEntry text="About" />
               ) : (
-                <Link to="/about">About</Link>
-              )}
+                  <Link to={`/${repo}/about`}>About</Link>
+                )}
             </li>
           </ul>
         </nav>
@@ -36,7 +36,7 @@ function Header({ description, link = '/', showHeader, siteTitle, slug }) {
         {showHeader && (
           <div className="header-info">
             <p className="site-title title">
-              <Link to={`/${link}/`}>{siteTitle}</Link>
+              <Link to={link}>{siteTitle}</Link>
             </p>
             {siteTitle == 'Quotes' && (
               <p className="site-description subtitle">{description}</p>
