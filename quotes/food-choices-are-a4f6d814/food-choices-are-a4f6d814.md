@@ -11,5 +11,5 @@ title: 'Food choices are determined by many factors, but reason (even consciousn
 unverified: false
 ---
 
-# *'Food choices are determined by many factors, but reason (even consciousness) is not generally high on the list.'*
+# *Food choices are determined by many factors, but reason (even consciousness) is not generally high on the list.*
 &mdash; Jonathan Safran Foer, <cite><abbr title="ISBN-13: 9780316069908">Eating Animals</abbr></cite>.
