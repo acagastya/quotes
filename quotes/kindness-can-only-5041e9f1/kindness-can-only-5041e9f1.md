@@ -1,6 +1,6 @@
 ---
 attributed: true
-author: 'Pashtu saying'
+author: 'Pashto saying'
 date: '2013-10-08'
 draft: false
 lang: 'en'
