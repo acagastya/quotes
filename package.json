@@ -45,6 +45,7 @@
     "deploy": "gatsby clean && gatsby build && gh-pages -d public",
     "develop": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "host": "yarn deploy; git push",
     "ps": "gatsby clean && gatsby build && gatsby serve",
     "serve": "gatsby serve",
     "start": "gatsby clean && gatsby develop",
