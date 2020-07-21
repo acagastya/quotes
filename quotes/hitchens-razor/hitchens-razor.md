@@ -7,8 +7,7 @@ lang: 'en'
 misattributed: false
 path: '/hitchens-razor'
 tags: ['Assertion', 'Evidence', 'Logic', 'Reasoning']
-title: 'What can be asserted without evidence can also be dismissed without
-evidence.'
+title: 'What can be asserted without evidence can also be dismissed without evidence.'
 unverified: false
 ---
 
