@@ -13,6 +13,7 @@ function Template({ data }) {
   const {
     attributed,
     author,
+    cover,
     lang = 'en',
     misattributed,
     path,
@@ -22,7 +23,7 @@ function Template({ data }) {
   } = frontmatter;
   return (
     <Layout showHeader={false} heading={title}>
-      <SEO blog={true} path={path} tags={tags} title={title} />
+      <SEO blog={true} cover={cover} path={path} tags={tags} title={title} />
       <Article
         attributed={attributed}
         author={author}
@@ -44,6 +45,7 @@ export const query = graphql`
       frontmatter {
         attributed
         author
+        cover
         lang
         misattributed
         path
