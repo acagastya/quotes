@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'bell hooks'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Bellhooks.jpg'
 date: '1981'
 draft: false
 lang: 'en'

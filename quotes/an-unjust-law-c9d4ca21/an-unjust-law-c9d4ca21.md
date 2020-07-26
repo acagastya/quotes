@@ -1,6 +1,7 @@
 ---
 attributed: true
 author: 'Saint Augustine of Hippo'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Saint_Augustine_by_Philippe_de_Champaigne.jpg'
 date: '1994-01-01'
 draft: false
 lang: 'la'

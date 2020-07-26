@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Mona Eltahawy'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Mona_Eltahawy_2011.jpg'
 date: '2015-04-21'
 draft: false
 lang: 'en'

@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Paulo Coelho'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Paulo_Coelho_2007-04-07_001.jpg'
 date: '2009-10-17'
 draft: false
 lang: 'en'

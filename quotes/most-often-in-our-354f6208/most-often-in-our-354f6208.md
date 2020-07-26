@@ -1,6 +1,7 @@
 ---
 attributed: true
 author: 'Martin Heidegger'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Heidegger_1_%281960%29.jpg'
 date: '2013-03-09'
 draft: false
 lang: 'fr'

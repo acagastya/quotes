@@ -1,6 +1,7 @@
 ---
 attributed: true
 author: 'Rābiʿa al-ʿAdawiyya'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rabia_al-Adawiyya.jpg'
 date: '2020-03-11'
 draft: false
 lang: 'en'

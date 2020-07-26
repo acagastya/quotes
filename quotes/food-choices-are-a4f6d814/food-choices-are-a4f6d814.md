@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Jonathan Safran Foer'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Jonathan_Safran_Foer.jpg'
 date: '2009-10-31'
 draft: false
 lang: 'en'

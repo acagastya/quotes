@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Khalil Gibran'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Kahlil_Gibran_1913.jpg'
 date: '1923'
 draft: false
 lang: 'en'

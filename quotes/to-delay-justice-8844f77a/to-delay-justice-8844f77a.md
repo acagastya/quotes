@@ -1,6 +1,7 @@
 ---
 attributed: true
 author: 'William Penn'
+cover: 'https://commons.wikimedia.org/wiki/File:William_Penn_at_22_1666.jpg'
 date: '1682'
 draft: false
 lang: 'en'

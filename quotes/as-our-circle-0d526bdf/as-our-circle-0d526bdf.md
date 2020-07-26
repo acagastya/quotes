@@ -1,6 +1,7 @@
 ---
 attributed: true
 author: 'Albert Einstein'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/8/81/Albert_Einstein_colourised_portrait.jpg'
 date: '2007-10-08'
 draft: false
 lang: 'en'

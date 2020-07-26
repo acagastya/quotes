@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Martin Luther King, Junior'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Martin_Luther_King%2C_Jr._and_Lyndon_Johnson.jpg'
 date: '1963-04-19'
 draft: false
 lang: 'en'

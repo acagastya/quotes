@@ -1,6 +1,7 @@
 ---
 attributed: true
 author: 'Charles Kettering'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Charles_F._Kettering.jpg'
 date: '1954'
 draft: false
 lang: 'en'

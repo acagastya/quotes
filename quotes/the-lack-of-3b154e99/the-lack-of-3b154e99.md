@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Lawrence M. Krauss'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/7/77/Laurence_Krauss.JPG'
 date: '2011-03-30'
 draft: false
 lang: 'en'

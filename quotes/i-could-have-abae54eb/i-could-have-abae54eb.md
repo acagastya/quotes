@@ -1,6 +1,7 @@
 ---
 attributed: true
 author: 'Harriet Tubman'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/2/25/%28Portrait_of_Harriet_Tubman%29_%28LOC%29_%2838899564300%29.jpg'
 date: '2020-02-18'
 draft: false
 lang: 'en'

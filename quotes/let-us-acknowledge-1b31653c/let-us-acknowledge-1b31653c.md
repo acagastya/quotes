@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Monica Lewinsky'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Monica_Lewinsky.jpg'
 date: '2015-03-20'
 draft: false
 lang: 'en'

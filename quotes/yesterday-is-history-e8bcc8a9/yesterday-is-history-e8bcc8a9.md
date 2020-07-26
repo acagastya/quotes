@@ -1,6 +1,7 @@
 ---
 attributed: true
 author: 'Alice Morse Earle'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Alice_Morse_1873.jpg'
 date: '2020-03-11'
 draft: false
 lang: 'en'

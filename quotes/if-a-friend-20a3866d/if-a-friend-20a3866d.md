@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Imām al-Bayhaqi'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/البيهقي.png'
 date: '2020-03-02'
 draft: false
 lang: 'en'

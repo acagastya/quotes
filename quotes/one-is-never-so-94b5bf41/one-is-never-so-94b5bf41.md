@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'L. Frank Baum'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/6/69/L._Frank_Baum_%281911%29.jpg'
 date: '1900-05-17'
 draft: false
 lang: 'en'

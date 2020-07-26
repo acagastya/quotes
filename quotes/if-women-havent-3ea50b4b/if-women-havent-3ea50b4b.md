@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Leïla Slimani'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Leïla_Slimani_%28cropped%29.jpg'
 date: '2020-02-18'
 draft: false
 lang: 'en'

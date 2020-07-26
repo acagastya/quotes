@@ -1,6 +1,7 @@
 ---
 attributed: false
 author: 'Christopher Hitchens'
+cover: 'https://upload.wikimedia.org/wikipedia/commons/6/63/Christopher_Hitchens_2008-04-24_001.jpg'
 date: '2007-05-01'
 draft: false
 lang: 'en'
