@@ -13,4 +13,4 @@ unverified: false
 ---
 
 # *[W]e should always make a distinction that right and wrong is a very different standard than legal and illegal.  The law is no substitute for morality.*
-&mdash; Edward Snowden, <cite>[Snowden's fate under Trump and Putin](https://www.youtube.com/watch?v=Cx6fZEmTrdA)</cite>.
+&mdash; Edward Snowden, <cite>[Snowden's fate under Trump and Putin](https://www.youtube.com/watch?v=Cx6fZEmTrdA&t=47)</cite>.
