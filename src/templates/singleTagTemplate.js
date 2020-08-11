@@ -56,7 +56,7 @@ function SingleTagTemplate({ pageContext }) {
                   </div>
                   <header className="list-item-header">
                     <h3 className="list-item-title">
-                      <Link to={`/${repo}/quote/${path}`}>{title}</Link>
+                      <Link to={`/${repo}/quote${path}`}>{title}</Link>
                     </h3>
                   </header>
                 </article>
