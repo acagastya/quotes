@@ -98,21 +98,27 @@ function Footer({ attributed, author, misattributed, tags, unverified }) {
           {attributed ? (
             <span>
               <sup>
-                <em>!</em>
+                <em>
+                  <abbr title="Attributed">!</abbr>
+                </em>
               </sup>
             </span>
           ) : null}
           {misattributed ? (
             <span>
               <sup>
-                <em>?</em>
+                <em>
+                  <abbr title="Misattributed">?</abbr>
+                </em>
               </sup>
             </span>
           ) : null}
           {unverified ? (
             <span>
               <sup>
-                <em>#</em>
+                <em>
+                  <abbr title="Unverified">#</abbr>
+                </em>
               </sup>
             </span>
           ) : null}

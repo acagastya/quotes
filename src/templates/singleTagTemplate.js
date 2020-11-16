@@ -9,7 +9,11 @@ const { repo } = siteMetadata;
 function SingleTagTemplate({ pageContext }) {
   const { posts, tag } = pageContext;
   return (
-    <Layout heading={`Tag: ${tag} (${posts.length})`} link={`/${repo}/tags`} slug="tag">
+    <Layout
+      heading={`Tag: ${tag} (${posts.length})`}
+      link={`/${repo}/tags`}
+      slug="tag"
+    >
       <SEO title={`Tag: ${tag}`} />
       <div className="list-container">
         <ul className="list">
