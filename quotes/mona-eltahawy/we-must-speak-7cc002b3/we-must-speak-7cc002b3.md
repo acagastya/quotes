@@ -7,7 +7,7 @@ draft: false
 lang: 'en'
 misattributed: false
 path: '/we-must-speak-7cc002b3'
-tags: ['Apostasy', 'Blasphemy', 'Disobedience', 'Freedom', 'Injustice', 'Justice', 'Opperssion']
+tags: ['Apostasy', 'Blasphemy', 'Disobedience', 'Freedom', 'Injustice', 'Justice', 'Oppression']
 title: 'We must speak—blaspheme, if necessary; be accused of being apostates, if that is what is required.'
 unverified: false
 ---
