@@ -7,7 +7,7 @@ draft: false
 lang: 'en'
 misattributed: false
 path: '/vices-of-those-3693ef3e'
-tags: ['Censorship', 'Disagreement', 'Freedom', 'Free speech', 'Rights']
+tags: ['Censorship', 'Disagreement', 'Freedom', 'Free speech', 'Rights', 'Vice']
 title: 'Vices of those who would repress the opinions of others is they make themselves prisoners of their own opinions because they deny themselves the right and the means of changing them.'
 unverified: false
 ---
